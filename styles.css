@@ -3,106 +3,126 @@
     border-collapse: collapse;
     width: 100%;
     font-family: Arial, sans-serif;
-}
-
-/* Style pour l'en-tête du tableau */
-#scoreTable thead th {
+  }
+  
+  /* Style pour l'en-tête du tableau */
+  #scoreTable thead th {
     background-color: #f2f2f2;
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
-}
-
-/* Style pour les cellules du corps du tableau */
-#scoreTable tbody td {
+  }
+  
+  /* Style pour les cellules du corps du tableau */
+  #scoreTable tbody td {
     border: 1px solid #ddd;
     padding: 8px;
-}
-
-/* Style pour les lignes paires du corps du tableau */
-#scoreTable tbody tr:nth-child(even) {
+  }
+  
+  /* Style pour les lignes paires du corps du tableau */
+  #scoreTable tbody tr:nth-child(even) {
     background-color: #f9f9f9;
-}
-
-/* Style pour le survol des lignes du corps du tableau */
-#scoreTable tbody tr:hover {
+  }
+  
+  /* Style pour le survol des lignes du corps du tableau */
+  #scoreTable tbody tr:hover {
     background-color: #e6e6e6;
-}
-
-/* Image arrière-plan */
-body {
-    background-image: url('assets/RescueInTheDeep/ELEMENTS/TOYS_RESCUE_rescue_in_the_deep_presentation_03.png');
-    background-size: cover;
-}
-
-.medal {
-    display: inline-block;
+  }
+  
+  /* Logo RTD */
+  #header {
+    display: flex;
+    align-items: center;
+  }
+  
+  #logo {
     width: 30px;
     height: 30px;
-    margin-right: 100px; /* Ajout d'une marge à droite */
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  /* Taille titre h1 */
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Image arrière-plan */
+  body {
+    background-image: url('assets/RescueInTheDeep/ELEMENTS/TOYS_RESCUE_rescue_in_the_deep_presentation_03.png');
+    background-size: cover;
+  }
+  
+  .medal {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 100px; /* Réduit la marge à droite pour éviter le chevauchement */
     margin-bottom: 5px;
     margin-top: 5px;
     /* Styles d'image pour les médailles (or, argent, bronze) */
-}
-
-#goldMedal {
+  }
+  
+  #goldMedal {
     background-image: url('assets/medals/first.png');
-}
-
-#silverMedal {
+  }
+  
+  #silverMedal {
     background-image: url('assets/medals/second.png');
-}
-
-#bronzeMedal {
+  }
+  
+  #bronzeMedal {
     background-image: url('assets/medals/third.png');
-}
-
-#top3 {
+  }
+  
+  #top3 {
     margin-top: 20px;
     text-align: center; /* Centrer le titre */
-}
-
-#top3List {
+  }
+  
+  #top3List {
     display: flex;
     justify-content: space-around;
     align-items: center; /* Centrer verticalement les éléments */
     margin-top: 10px;
-}
-
-.top3Player {
+  }
+  
+  .top3Player {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.medal-image {
+  }
+  
+  .medal-image {
     width: 50px;
     height: auto;
     display: block;
     margin-bottom: 5px;
     margin-top: 5px;
-}
-
-.playerName {
+  }
+  
+  .playerName {
     font-weight: bold;
     margin-bottom: 2px;
-}
-
-.playerScore {
+  }
+  
+  .playerScore {
     font-size: 14px;
     color: gray;
     margin-top: 0;
-}
-
-.rank-1 .medal img {
+  }
+  
+  .rank-1 .medal img {
     filter: brightness(1.5); /* Appliquer un effet de surbrillance à la médaille d'or */
-}
-
-.rank-2 .medal img {
+  }
+  
+  .rank-2 .medal img {
     filter: brightness(1.2); /* Appliquer un effet de surbrillance à la médaille d'argent */
-}
-
-.rank-3 .medal img {
+  }
+  
+  .rank-3 .medal img {
     filter: brightness(1.1); /* Appliquer un effet de surbrillance à la médaille de bronze */
-}
+  }
+  
