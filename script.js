@@ -6,7 +6,7 @@ function handleFileUpload() {
     const file = fileInput.files[0];
 
     if (!file) {
-        alert('Aucun fichier sélectionné.');
+        alert('No selected file.');
         return;
     }
 
