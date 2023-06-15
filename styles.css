@@ -28,3 +28,9 @@
 #scoreTable tbody tr:hover {
     background-color: #e6e6e6;
 }
+
+/* Image arrière plan */
+body {
+    background-image: url('assets/RescueInTheDeep/ELEMENTS/TOYS_RESCUE_fond_bleu.png');
+    background-size: cover;
+}
