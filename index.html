@@ -8,6 +8,10 @@
 <body>
     <h1>EVE Evolving Education - Rescue in the Deep game leaderboard - 230615</h1>
 
+
+    <input type="file" id="fileInput">
+    <button onclick="handleFileUpload()">Upload selected json file</button>
+
     <div id="top3">
         <h2>Top 3</h2>
         <div id="top3List"></div>
@@ -27,9 +31,8 @@
             <!-- Les lignes de score seront générées dynamiquement ici -->
         </tbody>
     </table>
+
     
-    <input type="file" id="fileInput">
-    <button onclick="handleFileUpload()">Uploader le fichier JSON</button>
 
     <script src="script.js"></script>
 </body>

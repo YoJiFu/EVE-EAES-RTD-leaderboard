@@ -47,7 +47,7 @@ function handleFileUpload() {
 // Fusionner les nouveaux scores avec les scores précédents
 function mergeScores(previousScores, newScores) {
     // Copier les scores précédents
-    const mergedScores = previousScores.slice();
+    const mergedScores = [...previousScores];
 
     // Parcourir les nouveaux scores
     newScores.forEach(newScore => {
@@ -57,9 +57,7 @@ function mergeScores(previousScores, newScores) {
         if (existingScore) {
             // Si le score existe déjà, mettre à jour les valeurs si nécessaire
             if (newScore.Score > existingScore.Score) {
-                existingScore.Score = newScore.Score;
-                existingScore.Grade = newScore.Grade;
-                existingScore.Level = newScore.Level;
+                Object.assign(existingScore, newScore);
             }
         } else {
             // Si le score n'existe pas déjà, l'ajouter aux scores fusionnés
@@ -82,9 +80,7 @@ function updateScoreTable() {
     const tableBody = document.getElementById('scoreTableBody');
     
     // Supprimer les lignes existantes
-    while (tableBody.firstChild) {
-        tableBody.removeChild(tableBody.firstChild);
-    }
+    tableBody.innerHTML = '';
 
     // Ajouter les nouvelles lignes de score
     scores.forEach(score => {
@@ -118,7 +114,7 @@ function generateTop3() {
         const rank = index + 1;
         const medalImage = getMedalImage(rank);
         const playerElement = document.createElement('div');
-        playerElement.classList.add('top3Player');
+        playerElement.classList.add('top3Player', `rank-${rank}`); // Ajouter une classe CSS pour le classement
         playerElement.innerHTML = `
             <div class="medal">${medalImage}</div>
             <div class="playerName">${score.Name}</div>
@@ -144,5 +140,3 @@ function getMedalImage(rank) {
     }
     return medalImage;
 }
-
-
