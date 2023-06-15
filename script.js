@@ -1,12 +1,21 @@
 let scores = [];
 
+// Charger les scores depuis le stockage local (localStorage) lors du chargement de la page
+window.onload = function() {
+    const storedScores = localStorage.getItem('scores');
+    if (storedScores) {
+        scores = JSON.parse(storedScores);
+        updateScoreTable();
+    }
+};
+
 // Fonction pour charger le fichier JSON et mettre à jour le tableau de scores
 function handleFileUpload() {
     const fileInput = document.getElementById('fileInput');
     const file = fileInput.files[0];
 
     if (!file) {
-        alert('No selected file.');
+        alert('Aucun fichier sélectionné.');
         return;
     }
 
@@ -27,6 +36,9 @@ function handleFileUpload() {
 
         // Mettre à jour le tableau avec les scores fusionnés
         updateScoreTable();
+
+        // Sauvegarder les scores dans le stockage local (localStorage)
+        localStorage.setItem('scores', JSON.stringify(scores));
     };
 
     reader.readAsText(file);
