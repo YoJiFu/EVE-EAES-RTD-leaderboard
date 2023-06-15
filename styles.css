@@ -79,6 +79,11 @@ body {
     margin-bottom: 5px;
 }
 
+.medal-image {
+    width: 20px;
+    height: 20px;
+  }  
+
 .playerName {
     font-weight: bold;
 }

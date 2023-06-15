@@ -133,15 +133,16 @@ function getMedalImage(rank) {
     let medalImage = '';
     switch (rank) {
         case 1:
-            medalImage = '<img src="assets/medals/first.png" alt="Gold Medal">';
+            medalImage = '<img src="assets/medals/first.png" class="medal-image">';
             break;
         case 2:
-            medalImage = '<img src="assets/medals/second.png" alt="Silver Medal">';
+            medalImage = '<img src="assets/medals/second.png" class="medal-image">';
             break;
         case 3:
-            medalImage = '<img src="assets/medals/third.png" alt="Bronze Medal">';
+            medalImage = '<img src="assets/medals/third.png" class="medal-image">';
             break;
     }
     return medalImage;
 }
+
 
