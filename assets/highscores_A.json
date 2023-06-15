@@ -1,0 +1,39 @@
+{
+    "PlayersHighscore": [
+        {
+            "Name": "yoyo",
+            "Grade": "EMPEROR OF THE WAVES",
+            "Score": "11111",
+            "Level": "6",
+            "Rank": "2"
+        },
+        {
+            "Name": "yuyu",
+            "Grade": "QUEEN OF THE OCEAN",
+            "Score": "111100",
+            "Level": "2",
+            "Rank": "1"
+        },
+        {
+            "Name": "haha",
+            "Grade": "QUEEN OF THE SEA",
+            "Score": "9300",
+            "Level": "6",
+            "Rank": "4"
+        },
+        {
+            "Name": "hihi",
+            "Grade": "LORD SHARK",
+            "Score": "7600",
+            "Level": "1",
+            "Rank": "5"
+        },
+        {
+            "Name": "tata",
+            "Grade": "LADY SARDINE",
+            "Score": "10000",
+            "Level": "8",
+            "Rank": "3"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "PlayersHighscore": [
+        {
+            "Name": "yes",
+            "Grade": "EMPEROR OF THE DEPTHS",
+            "Score": "15280",
+            "Level": "6",
+            "Rank": "1"
+        },
+        {
+            "Name": "tutu",
+            "Grade": "QUEEN OF THE SEA",
+            "Score": "8900",
+            "Level": "2",
+            "Rank": "2"
+        },
+        {
+            "Name": "toto",
+            "Grade": "QUEEN OF THE SEA",
+            "Score": "8600",
+            "Level": "6",
+            "Rank": "3"
+        },
+        {
+            "Name": "terre",
+            "Grade": "LORD DOLPHIN",
+            "Score": "6310",
+            "Level": "1",
+            "Rank": "4"
+        },
+        {
+            "Name": "titi",
+            "Grade": "LORD DOLPHIN",
+            "Score": "6110",
+            "Level": "8",
+            "Rank": "5"
+        },
+        {
+            "Name": "tata",
+            "Grade": "LADY SARDINE",
+            "Score": "3050",
+            "Level": "8",
+            "Rank": "6"
+        }
+    ]
+}
