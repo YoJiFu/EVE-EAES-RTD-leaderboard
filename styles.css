@@ -34,3 +34,56 @@ body {
     background-image: url('assets/RescueInTheDeep/ELEMENTS/TOYS_RESCUE_rescue_in_the_deep_presentation_03.png');
     background-size: cover;
 }
+
+.medal {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    /* Styles d'image pour les médailles (or, argent, bronze) */
+}
+
+#goldMedal {
+    background-image: url('assets/medals/first.png');
+}
+
+#silverMedal {
+    background-image: url('assets/medals/second.png');
+}
+
+#bronzeMedal {
+    background-image: url('assets/medals/third.png');
+}
+
+
+
+#top3 {
+    margin-top: 20px;
+}
+
+#top3 h2 {
+    text-align: center;
+}
+
+#top3List {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.top3Player {
+    text-align: center;
+}
+
+.medal {
+    margin-bottom: 5px;
+}
+
+.playerName {
+    font-weight: bold;
+}
+
+.playerScore {
+    font-size: 14px;
+    color: gray;
+}

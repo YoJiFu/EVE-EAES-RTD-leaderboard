@@ -2,28 +2,34 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>EVE Rescue in the Deep Leaderboard - 230615</title>
-    <link rel="icon" type="image/png" href="/assets/favicon/favicon.ico">
+    <title>EVE Evolving Education - Rescue in the Deep game leaderboard</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>EVE Rescue in the Deep Leaderboard</h1>
-    
+    <h1>EVE Evolving Education - Rescue in the Deep game leaderboard - 230615</h1>
 
-    <input type="file" id="fileInput">
-    <button onclick="handleFileUpload()">Click to upload the selected JSON file and update the leaderboard table.</button>
+    <div id="top3">
+        <h2>Top 3</h2>
+        <div id="top3List"></div>
+    </div>
+
     <table id="scoreTable">
         <thead>
             <tr>
-                <th>Player Name</th>
+                <th>Player</th>
                 <th>Grade</th>
                 <th>Score</th>
                 <th>Level</th>
                 <th>Rank</th>
             </tr>
         </thead>
-        <tbody id="scoreTableBody"></tbody>
+        <tbody id="scoreTableBody">
+            <!-- Les lignes de score seront générées dynamiquement ici -->
+        </tbody>
     </table>
+    
+    <input type="file" id="fileInput">
+    <button onclick="handleFileUpload()">Uploader le fichier JSON</button>
 
     <script src="script.js"></script>
 </body>

@@ -98,4 +98,50 @@ function updateScoreTable() {
         `;
         tableBody.appendChild(row);
     });
+
+    // Mettre à jour le top 3 des meilleurs joueurs
+    generateTop3();
 }
+
+// Générer le top 3 des meilleurs joueurs
+function generateTop3() {
+    const top3List = document.getElementById('top3List');
+
+    // Vider le contenu précédent
+    top3List.innerHTML = '';
+
+    // Récupérer les trois meilleurs scores
+    const top3Scores = scores.slice(0, 3);
+
+    // Parcourir les trois meilleurs scores et générer les éléments HTML correspondants
+    top3Scores.forEach((score, index) => {
+        const rank = index + 1;
+        const medalImage = getMedalImage(rank);
+        const playerElement = document.createElement('div');
+        playerElement.classList.add('top3Player');
+        playerElement.innerHTML = `
+            <div class="medal">${medalImage}</div>
+            <div class="playerName">${score.Name}</div>
+            <div class="playerScore">${score.Score}</div>
+        `;
+        top3List.appendChild(playerElement);
+    });
+}
+
+// Obtenir l'image de médaille correspondant au classement
+function getMedalImage(rank) {
+    let medalImage = '';
+    switch (rank) {
+        case 1:
+            medalImage = '<img src="assets/medals/first.png" alt="Gold Medal">';
+            break;
+        case 2:
+            medalImage = '<img src="assets/medals/second.png" alt="Silver Medal">';
+            break;
+        case 3:
+            medalImage = '<img src="assets/medals/third.png" alt="Bronze Medal">';
+            break;
+    }
+    return medalImage;
+}
+
