@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tableau de scores</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Tableau de scores</h1>
+    <input type="file" id="fileInput">
+    <button onclick="handleFileUpload()">Uploader le fichier JSON</button>
+    <table id="scoreTable">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Grade</th>
+                <th>Score</th>
+                <th>Niveau</th>
+                <th>Classement</th>
+            </tr>
+        </thead>
+        <tbody id="scoreTableBody"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
