@@ -135,3 +135,21 @@ filter: brightness(1.2); /* Appliquer un effet de surbrillance à la médaille d
 filter: brightness(1.1); /* Appliquer un effet de surbrillance à la médaille de bronze */
 }
 
+#fileUploadContainer {
+    text-align: center;
+    margin-bottom: 20px; /* Ajustez la marge selon vos besoins */
+}
+
+#uploadButton,
+#selectFileButton {
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
