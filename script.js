@@ -140,3 +140,21 @@ function getMedalImage(rank) {
     }
     return medalImage;
 }
+
+// Obtenir la date actuelle sous forme YY/MM/DD
+function getCurrentDate() {
+    const currentDate = new Date();
+    const year = currentDate.getFullYear().toString().slice(-2);
+    const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+    const day = currentDate.getDate().toString().padStart(2, '0');
+    return `${year}/${month}/${day}`;
+}
+
+// Mettre à jour la date dans le sous-titre
+function updateDate() {
+    const dateElement = document.getElementById('date');
+    dateElement.textContent = getCurrentDate();
+}
+
+// Appeler la fonction pour mettre à jour la date initialement
+updateDate();
