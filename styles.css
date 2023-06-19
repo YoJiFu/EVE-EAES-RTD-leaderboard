@@ -24,6 +24,11 @@ padding: 8px;
 background-color: #f9f9f9;
 }
 
+/* Style pour les lignes impaires du corps du tableau */
+#scoreTable tbody tr:nth-child(odd) {
+background-color: #244f6f;
+}
+
 /* Style pour le survol des lignes du corps du tableau */
 #scoreTable tbody tr:hover {
 background-color: #e6e6e6;
