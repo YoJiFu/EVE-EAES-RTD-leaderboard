@@ -52,7 +52,7 @@ vertical-align: middle;
 
 /* Taille et couleur titre h1 */
 h1 {
-font-size: 24px;
+font-size: 30px;
 margin-top: 10px;
 color: white;
 }
@@ -125,12 +125,14 @@ margin-top: 5px;
 .playerName {
 font-weight: bold;
 margin-bottom: 2px;
+font-size: 20px;
 }
 
 .playerScore {
 font-size: 14px;
 color: white;
 margin-top: 0;
+font-size: 18px;
 }
 
 .rank-1 .medal img {
@@ -164,9 +166,17 @@ footer {
     color: black;
 }
 
-/* Espace vide avant bouton effacement */
+/* Conteneur boutons */
 #buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px; /* Ajoute une marge en haut */
     text-align: center;
 }
+
+/* Bouton sélection fichier json */
+#selectButton {
+    margin-right: 10px; /* Ajoute un espace entre les deux boutons */
+  }
   
