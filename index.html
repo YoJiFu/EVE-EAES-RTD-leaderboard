@@ -13,11 +13,6 @@
         <h2 id="date"></h2>
     </div>
 
-<div id="buttonContainer">
-    <input type="file" id="fileInput">
-    <button onclick="handleFileUpload()">Upload selected JSON file and update score table</button>
-</div>
-
     <div id="top3">
         <h2>Top 3 Players</h2>
         <div id="top3List"></div>
@@ -37,6 +32,11 @@
             <!-- Les lignes de score seront générées dynamiquement ici -->
         </tbody>
     </table>
+
+    <div id="buttonContainer">
+        <input type="file" id="fileInput">
+        <button onclick="handleFileUpload()">Upload selected JSON file and update score table</button>
+    </div>
 
     <div id="buttonContainer">
         <button id="resetButton">Reset Table and Top 3</button>
