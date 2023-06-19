@@ -44,10 +44,11 @@ margin-right: 10px;
 vertical-align: middle;
 }
 
-/* Taille titre h1 */
+/* Taille et couleur titre h1 */
 h1 {
 font-size: 24px;
 margin-top: 10px;
+color: white;
 }
 
 /* Taille titre h2 */
