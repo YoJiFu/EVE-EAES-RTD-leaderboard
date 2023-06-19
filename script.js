@@ -158,3 +158,47 @@ function updateDate() {
 
 // Appeler la fonction pour mettre à jour la date initialement
 updateDate();
+
+// Bouton reset :
+
+// Sélectionnez le bouton par son ID
+const resetButton = document.getElementById('resetButton');
+
+// Ajoutez un gestionnaire d'événements pour le clic sur le bouton
+resetButton.addEventListener('click', function() {
+    // Exécutez la fonction de réinitialisation du tableau
+    resetTable();
+
+    // Exécutez la fonction de réinitialisation du top 3
+    resetTop3();
+});
+
+// Fonction de réinitialisation du tableau
+function resetTable() {
+    // Sélectionnez le tableau par son ID ou sa classe
+    const table = document.getElementById('scoreTable'); // Remplacez 'table' par l'ID ou la classe de votre tableau
+
+    // Effacez le contenu du tableau
+    table.innerHTML = '';
+
+    // Réinitialisez les variables de scores
+    scores = [];
+
+    // Effacez le contenu du localStorage
+    localStorage.removeItem('scores');
+}
+
+// Fonction de réinitialisation du top 3
+function resetTop3() {
+    // Sélectionnez le top 3 par son ID ou sa classe
+    const top3 = document.getElementById('top3'); // Remplacez 'top3' par l'ID ou la classe de votre top 3
+
+    // Effacez le contenu du top 3
+    top3.innerHTML = '';
+
+    // Réinitialisez les variables de top3
+    top3Scores = [];
+
+    // Effacez le contenu du localStorage
+    localStorage.removeItem('top3Scores');
+}

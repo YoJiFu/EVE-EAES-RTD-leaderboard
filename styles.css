@@ -162,3 +162,9 @@ footer {
     font-size: 14px;
     color: black;
 }
+
+/* Espace vide avant bouton effacement */
+#buttonContainer {
+    margin-top: 20px; /* Ajoute une marge en haut */
+  }
+  
