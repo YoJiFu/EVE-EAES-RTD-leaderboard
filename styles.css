@@ -27,6 +27,7 @@ background-color: #f9f9f9;
 /* Style pour les lignes impaires du corps du tableau */
 #scoreTable tbody tr:nth-child(odd) {
 background-color: #244f6f;
+color: white;
 }
 
 /* Style pour le survol des lignes du corps du tableau */
